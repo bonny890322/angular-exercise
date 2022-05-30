@@ -18,12 +18,16 @@
   <mat-sidenav #sideNav>
     <mat-nav-list>
       <a mat-list-item routerLink="home">Home</a>
-      <a mat-list-item routerLink="">?</a>
+      <a mat-list-item routerLink="primeng">PrimeNG</a>
     </mat-nav-list>
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <router-outlet></router-outlet>
+    <div class="layout-main-container">
+      <div class="layout-main">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
   </mat-sidenav-content>
 
 </mat-sidenav-container>

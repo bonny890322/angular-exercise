@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -8,8 +9,14 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
+import { PrimengExampleComponent } from './components/primeng-example/primeng-example.component';
+import { HomeComponent } from './components/home/home.component'
+
+//mateial模組
 import { MaterialModule } from './material/material.module';
-import { HomeComponent } from './components/home/home.component'//mateial模組
+
+//primeng模組
+import { PrimengModule } from './primeng/primeng.module';
 
 
 @NgModule({
@@ -18,14 +25,16 @@ import { HomeComponent } from './components/home/home.component'//mateial模組
     FooterComponent,
     NavbarComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    PrimengExampleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    PrimengModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

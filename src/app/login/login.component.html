@@ -1,15 +1,15 @@
 <div class="wrapper">
   <div class="page-header" style="background-image: url('./assets/img/login-image.jpg');">
-    <div class="container login-body">
-      <div class="row text-center">
-        <mat-card class="example-card card-container">
+    <div class="container vh-100">
+      <div class="row justify-content-center h-100">
+        <mat-card class="example-card card-container my-auto">
 
-          <mat-card-header class="text-center">
+          <div class="text-center">
             <mat-card-title>Login</mat-card-title>
-          </mat-card-header>
+          </div>
 
           <mat-card-content>
-            <form class="example-form ">
+            <form>
               <table class="example-full-width center" cellspacing="0">
                 <tr>
                   <td>
@@ -24,7 +24,7 @@
                   <td>
                     <mat-form-field appearance="outline">
                       <mat-label>Password</mat-label>
-                      <input matInput placeholder="Password" required>
+                      <input matInput type="password" placeholder="Password" required>
                       <mat-icon matSuffix>password</mat-icon>
                       <mat-hint>password at least 8 characters</mat-hint>
                     </mat-form-field>
@@ -34,15 +34,46 @@
             </form>
           </mat-card-content>
 
-          <mat-card-actions>
-            <button mat-raised-button color="primary">Login</button>
+          <mat-card-actions class="text-center">
+            <div class="text-center">
+              <button mat-raised-button color="primary">Login</button>
+            </div>
           </mat-card-actions>
+
 
         </mat-card>
       </div>
-      <!-- <div class="footer register-footer text-center">
-        <h6>&copy;{{test | date: 'yyyy'}}, made with <i class="fa fa-heart heart"></i> by Creative Tim</h6>
-      </div> -->
     </div>
   </div>
 </div>
+<!-- <div class="container vh-100">
+  <div class="row justify-content-center h-100">
+    <div class="card my-auto shadow">
+      <div class="card-body px-5">
+        <div class="text-center">
+          <mat-icon>lock</mat-icon>
+        </div>
+        <div class="text-center">
+          <h2>Welcome</h2>
+        </div>
+        <p style="color: lightslategray; text-align: center;">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please enter your login
+          details&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <form>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Email" class="form-control" formControlName="email"
+              name="email" />
+          </div>
+          <div class="form-group">
+            <input type="password" id="password" placeholder="Password" class="form-control" formControlName="password"
+              name="password" />
+          </div>
+          <input type="submit" class="btn btn-primary w-100" value="Login" name="">
+        </form>
+      </div>
+      <div class="card-footer text-right">
+        <small><a routerLink="../forgot-password">Forgot Password</a></small>
+      </div>
+    </div>
+  </div>
+</div> -->
