@@ -1,0 +1,32 @@
+<p-breadcrumb [model]="items" [home]="home"></p-breadcrumb>
+<div class="layout-main-container">
+
+  <div class="layout-main">
+    <div class="grid">
+      <div class="col-12 flex justify-content-center">
+
+        <!-- 綁定表單名稱 -->
+        <form [formGroup]="applyForm">
+          <!-- formControlName 為剛剛建立的表單控制元件名稱 -->
+          <mat-form-field appearance="outline" class="mr-2">
+            <mat-label>公司名稱</mat-label>
+            <input matInput type="name" formControlName="name" [(ngModel)]="name" class="w-full mb-3">
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="mr-2">
+            <mat-label>統一編號</mat-label>
+            <input matInput type="uniform_number" formControlName="uniform_number" [(ngModel)]="uniform_number"
+              class="w-full mb-3">
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="mr-2">
+            <mat-label>創建人</mat-label>
+            <input matInput type="created_by" formControlName="created_by" [(ngModel)]="created_by" class="w-full mb-3">
+          </mat-form-field>
+        </form>
+
+        <div>
+          <button mat-raised-button color="primary" (click)="postCompanyProject()">Submit</button>
+        </div>
+
+      </div>
+    </div>
+  </div>

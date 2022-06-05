@@ -1,6 +1,8 @@
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms'; //匯入ReactForms模組
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +19,8 @@ import { MaterialModule } from './material/material.module';
 
 //primeng模組
 import { PrimengModule } from './primeng/primeng.module';
+import { TableComponent } from './components/table/table.component';
+import { FormComponent } from './components/form/form.component';
 
 
 @NgModule({
@@ -27,6 +31,8 @@ import { PrimengModule } from './primeng/primeng.module';
     LoginComponent,
     HomeComponent,
     PrimengExampleComponent,
+    TableComponent,
+    FormComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +41,8 @@ import { PrimengModule } from './primeng/primeng.module';
     BrowserAnimationsModule,
     MaterialModule,
     PrimengModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
