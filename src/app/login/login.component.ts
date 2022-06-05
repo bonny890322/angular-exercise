@@ -11,6 +11,8 @@ export class LoginComponent implements OnInit {
   focus: any;
   focus1: any;
 
+  password!: string;
+
   constructor() { }
 
   ngOnInit(): void {

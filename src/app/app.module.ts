@@ -26,7 +26,7 @@ import { PrimengModule } from './primeng/primeng.module';
     NavbarComponent,
     LoginComponent,
     HomeComponent,
-    PrimengExampleComponent
+    PrimengExampleComponent,
   ],
   imports: [
     BrowserModule,
